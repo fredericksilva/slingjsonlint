@@ -36,10 +36,10 @@
                 </div>
                 <div class="right span-12 unimportant" style="text-align: right;">
                     <div>
-                        <a href="http://lab.arc90.com" id="labHint" onclick="javascript: pageTracker._trackPageview('/arc90LabLink');" name="labHint"><img style="margin-right: 9px;" src="c/images/logo_arc90.png"></a>
+                        <a href="http://lab.arc90.com" id="labHint" name="labHint"><img style="margin-right: 9px;" src="c/images/logo_arc90.png"></a>
                     </div>
                     <div>
-                        Based on a Tool from the Arc90 Lab. <a href="http://www.github.com/umbrae/jsonlintdotcom" id="sourceLink" onclick="javascript: pageTracker._trackPageview('/sourceLink');" name="sourceLink">Source is on GitHub.</a><br>
+                        Based on a Tool from the Arc90 Lab. <a href="http://www.github.com/umbrae/jsonlintdotcom" id="sourceLink" name="sourceLink">Source is on GitHub.</a><br>
                         Props to <a href="http://www.crockford.com/">Douglas Crockford</a> of <a href="http://www.json.org">JSON</a> and <a href="http://www.jslint.com">JS Lint</a> and <br /><a href="http://zaa.ch/">Zach Carter</a>, who provided the <a href="https://github.com/zaach/jsonlint">pure JS implementation of jsonlint</a>.
                     </div>
                 </div>
@@ -53,14 +53,14 @@
                 </div>
                 <div class="validateButtons clear">
                     <div class="left">
-                        <button name="validate" id="validate" value="Validate" class="button left bold" onclick="javascript: pageTracker._trackPageview('/validate');">Validate</button>
+                        <button name="validate" id="validate" value="Validate" class="button left bold">Validate</button>
                     </div>
                     <div class="right">
-                        <a href="#" id="faqButton" class="bold" onclick="javascript: pageTracker._trackPageview('/faq');" name="faqButton">FAQ</a>
+                        <a href="#" id="faqButton" class="bold" name="faqButton">FAQ</a>
                     </div>
                     <div class="right small kindling">
                         JSON Lint is an idea sparked at Arc90 by<br>
-                        <a href="http://www.kindlingapp.com" onclick="javascript: pageTracker._trackPageview('/outgoing/kindling');" title="Kindling - Find the next great idea in your organization."><img style="margin: 0;" border="0" alt="Kindling Idea Management" src="c/images/kindling_250px_light_trans.png"><br>
+                        <a href="http://www.kindlingapp.com" title="Kindling - Find the next great idea in your organization."><img style="margin: 0;" border="0" alt="Kindling Idea Management" src="c/images/kindling_250px_light_trans.png"><br>
                         An Idea Management &amp; Collaboration Tool</a>
                     </div>
                 </div>
@@ -107,7 +107,7 @@
                     <div>
                         <p>
                             Sure, a few. You can input a URL and it'll scrape it for JSON and parse that.<br>
-                            An example URL to test: <a href="#" onclick="pageTracker._trackPageview('/redditUrlInput'); $('#json_input').val('http://www.reddit.com/r/programming/comments/9szpc/jsonlint_a_handy_json_validator_and_reformatter.json');">http://www.reddit.com/r/programming/comments/9szpc/jsonlint_a_handy_json_validator_and_reformatter.json</a>
+                            An example URL to test: <a href="#">http://www.reddit.com/r/programming/comments/9szpc/jsonlint_a_handy_json_validator_and_reformatter.json</a>
                         </p>
                         <p>
                             You can also provide JSON to lint in the URL if you link to JSON Lint with the "json" parameter. <a href="http://www.jsonlint.com?json=%7B%22hello%22%3A%20%22world%22%7D">Here's an example URL to test.</a>
@@ -168,16 +168,5 @@
                 </div>
             </div>
         </div>
-        <script type="text/javascript">
-
-        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-        </script><script type="text/javascript">
-    if (typeof _gat !== "undefined" ) {
-            var pageTracker = _gat._getTracker("UA-2118091-3");
-            pageTracker._initData();
-            pageTracker._trackPageview();
-    }
-        </script>
     </body>
 </html>
