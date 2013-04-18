@@ -222,9 +222,13 @@ jsl.interactions = (function () {
         
         $('#json_input').keyup(function () {
             $('div.linedwrap').removeClass('greenBorder').removeClass('redBorder');
-        }).linedtextarea({
-            selectedClass: 'lineselect'
         }).focus();
+
+        setTimeout(function () {
+            $('#json_input').linedtextarea({
+                selectedClass: 'lineselect'
+            });
+        }, 100);
 
         $('#reset').click(function () {
             $('#json_input').val('').focus();
