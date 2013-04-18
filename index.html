@@ -11,9 +11,10 @@
                 document.write('<sc' + 'ript type="text/javascript" src="c/js/json2.js"></sc' + 'ript>');
             }
         </script>
-	<script src="c/js/jquery-1.6.1.min.js" type="text/javascript"></script>
+    <script src="c/js/jquery-1.6.1.min.js" type="text/javascript"></script>
         <script src="c/js/jquery-linedtextarea/jquery-linedtextarea.js" type="text/javascript"></script>
         <link href="c/js/jquery-linedtextarea/jquery-linedtextarea.css" type="text/css" rel="stylesheet">
+        <script type="text/javascript" src="c/js/aem.filter.js"></script>
         <script type="text/javascript" src="c/js/jsl.parser.js"></script>
         <script type="text/javascript" src="c/js/jsl.format.js"></script>
         <script type="text/javascript" src="c/js/jsl.interactions.js"></script>
@@ -27,7 +28,7 @@
             <div class="banner clear">
                 <div class="left">
                     <h1 id="headerText">
-                        JSONLint
+                        AEM / Sling JSONLint
                     </h1>
                     <h3>
                         The JSON Validator
@@ -38,7 +39,7 @@
                         <a href="http://lab.arc90.com" id="labHint" onclick="javascript: pageTracker._trackPageview('/arc90LabLink');" name="labHint"><img style="margin-right: 9px;" src="c/images/logo_arc90.png"></a>
                     </div>
                     <div>
-                        A Tool from the Arc90 Lab. <a href="http://www.github.com/umbrae/jsonlintdotcom" id="sourceLink" onclick="javascript: pageTracker._trackPageview('/sourceLink');" name="sourceLink">Source is on GitHub.</a><br>
+                        Based on a Tool from the Arc90 Lab. <a href="http://www.github.com/umbrae/jsonlintdotcom" id="sourceLink" onclick="javascript: pageTracker._trackPageview('/sourceLink');" name="sourceLink">Source is on GitHub.</a><br>
                         Props to <a href="http://www.crockford.com/">Douglas Crockford</a> of <a href="http://www.json.org">JSON</a> and <a href="http://www.jslint.com">JS Lint</a> and <br /><a href="http://zaa.ch/">Zach Carter</a>, who provided the <a href="https://github.com/zaach/jsonlint">pure JS implementation of jsonlint</a>.
                     </div>
                 </div>
@@ -172,11 +173,11 @@
         var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
         document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
         </script><script type="text/javascript">
-	if (typeof _gat !== "undefined" ) {
+    if (typeof _gat !== "undefined" ) {
             var pageTracker = _gat._getTracker("UA-2118091-3");
             pageTracker._initData();
             pageTracker._trackPageview();
-	}
+    }
         </script>
     </body>
 </html>

@@ -113,6 +113,15 @@ jsl.interactions = (function () {
         try {
             result = jsl.parser.parse(jsonVal);
 
+            // Start AEM Added Stuff
+            result2 = JSON.parse(jsonVal);
+
+            AEM.filter(result2);
+
+            jsonVal = JSON.stringify(result2, null, "");
+
+            // End AEM Added Stuff
+
             if (result) {
                 $('#results').removeClass('error').addClass('success');
                 $('div.linedwrap').removeClass('redBorder').addClass('greenBorder');
@@ -196,6 +205,8 @@ jsl.interactions = (function () {
 
             var jsonVal = $.trim($('#json_input').val());
 
+            /*
+            //Allow URLs Removed
             if (jsonVal.substring(0, 4).toLowerCase() === "http") {
                 $.post("proxy.php", {"url": jsonVal}, function (responseObj) {
                     $('#json_input').val(responseObj.content);
@@ -203,7 +214,8 @@ jsl.interactions = (function () {
                 }, 'json');
             } else {
                 validate();
-            }
+            }*/
+            validate();
 
             return false;
         });
